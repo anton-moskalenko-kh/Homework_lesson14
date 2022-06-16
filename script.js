@@ -12,12 +12,8 @@ function FormValidate(form) {
         for (let i = 0; i < _elements.length; i++) {
             const element = _elements[i];
             const reqMessage = element.dataset.req;
-            const emailMessage = element.dataset.email;
             if (reqMessage) {
                 this.required(element, reqMessage);
-            }
-            if (emailMessage) {
-                this.required(element, emailMessage);
             }
         }
     }
